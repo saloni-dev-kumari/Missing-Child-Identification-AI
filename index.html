@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Missing Child Identification System</title>
+</head>
+<body>
+    <h2>AI-Based Missing Child Identification System</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload & Search</button>
+    </form>
+
+    <h3>{{ result }}</h3>
+
+    {% if matched_name %}
+        <p>Matched Image: {{ matched_name }}</p>
+    {% endif %}
+</body>
+</html>
